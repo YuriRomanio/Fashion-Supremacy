@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Fashion Supremacy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Fashion Supremacy</h1>
+            <p class="slogan">moda para o estilo de vida de seus sonhos</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html#home">Início</a></li>
+                    <li><a href="index.html#moda">Moda</a></li>
+                    <li><a href="index.html#lifestyle">Estilo de Vida</a></li>
+                    <li><a href="index.html#categorias">Categorias</a></li>
+                    <li><a href="index.html#produtos">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contato-main">
+        <section id="contato-form" class="content-section">
+            <div class="container">
+                <h2>Fale Conosco</h2>
+                <p class="contato-intro">Tem alguma dúvida, sugestão ou quer fazer uma parceria? Preencha o formulário abaixo e entraremos em contato o mais breve possível.</p>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="assunto">Assunto:</label>
+                        <select id="assunto" name="assunto" required>
+                            <option value="" disabled selected>Selecione um assunto</option>
+                            <option value="duvida">Dúvida Geral</option>
+                            <option value="parceria">Proposta de Parceria</option>
+                            <option value="sugestao">Sugestão/Feedback</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Fashion Supremacy. Todos os direitos reservados.</p>
+            <div id="footer-message"></div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
